@@ -24,6 +24,10 @@ class Clustering:
         self.y = data[0]  # class labels
         x = data.iloc[:, features]  # observable data
 
+        # We will need these for naming the output video files
+        self.features = features
+        self.data_path = data_path
+
         # Lets standardize our features
         self.x_std = (x - x.mean(0)) / (x.std(0))
 
@@ -77,7 +81,8 @@ class Clustering:
 
             if abs(sum((old_centroids - centroids).sum())) < 2 ** -23:  # Termination condition
                 self.out_vid.release()  # Lets release our video
-                print(count)
+                print('Clustering complete with {} iterations. The final purity achieved was {} %. Please check the '
+                      'output video file for visualization.'.format(count, purity*100))
                 break
 
     def get_purity(self, df):
@@ -131,7 +136,7 @@ class Clustering:
                            edgecolor='k', linewidths=2)
 
         try:
-            ax.view_init(70, 155)  # Fixing frame viewing angle, if frame is 3d
+            ax.view_init(45, 90)  # Fixing frame viewing angle, if frame is 3d
         except AttributeError:
             pass
 
@@ -144,7 +149,16 @@ class Clustering:
             self.num_of_vdo_writers = 1
             # Lets define the codec and create VideoWriter object
             fourcc = cv2.VideoWriter_fourcc(*'XVID')
-            self.out_vid = cv2.VideoWriter('o_video.avi', fourcc, 1.0, (shape[1], shape[0]))
+
+            if len(self.features) == 7 and self.data_path.endswith('diabetes.csv'):
+                file_name = 'K_{}_F_{}.avi'.format(str(self.k), 'all')
+            else:
+                feature_string = ''
+                for feature in self.features:
+                    feature_string += '_{}'.format(feature)
+                file_name = 'K_{}_F{}.avi'.format(str(self.k), feature_string)
+
+            self.out_vid = cv2.VideoWriter(file_name, fourcc, 1.0, (shape[1], shape[0]))
 
         # Writing frame to video
         self.out_vid.write(img)
@@ -204,4 +218,8 @@ class Clustering:
 
 if __name__ == '__main__':
     # Lets read in the data
-    clustering = Clustering(k=2, features=[6, 7])
+    num_k = input('Please enter a number for k:')
+    which_features = list(input('Please enter the features you want to include, in a comma separated fashion if you '
+                                'enter more than one(eg. 1,2,3,4):'))[::2]
+    which_features = [int(f) for f in which_features]
+    clustering = Clustering(k=2, features=which_features)
