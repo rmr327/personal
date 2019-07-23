@@ -7,17 +7,22 @@ import cv2
 
 
 class Clustering:
-    def __init__(self, k, data_path='rmr327_cs383_hw2/diabetes.csv'):
+    def __init__(self, k, features,
+                 data_path=r'C:\Users\rakee\PycharmProjects\personal\cs_283\rmr327_cs383_hw2\diabetes.csv'):
         """
 
         :param k: The number of clusters
+        :type k: int
+        :param features: The features to be used in clustering
+        :type features: list
         :param data_path: Path to CSV data file
+        :type data_path: string
         """
         data = pd.read_csv(data_path, header=None)
 
         # Lets separate the class label from the observable data
         self.y = data[0]  # class labels
-        x = data.iloc[:, 1:]  # observable data
+        x = data.iloc[:, features]  # observable data
 
         # Lets standardize our features
         self.x_std = (x - x.mean(0)) / (x.std(0))
@@ -50,7 +55,7 @@ class Clustering:
         :return:
         """
         # Lets randomly select k centroids
-        centroids = self.x_std.sample(self.k, random_state=0)
+        centroids = self.x_std.sample(self.k, random_state=0)  # random_state sets random seed to zero
         centroids.reset_index(inplace=True, drop=True)
 
         # Lets make a output data frame
@@ -72,6 +77,7 @@ class Clustering:
 
             if abs(sum((old_centroids - centroids).sum())) < 2 ** -23:  # Termination condition
                 self.out_vid.release()  # Lets release our video
+                print(count)
                 break
 
     def get_purity(self, df):
@@ -108,12 +114,13 @@ class Clustering:
         if num_cols == 2:
             ax = fig.add_subplot(111)
             ax.scatter(output_df.iloc[:, 0], output_df.iloc[:, 1], color=output_df['color'], alpha=0.5, marker='x')
+            plt.title('Iteration: {}, Purity %: {}'.format(count, purity * 100))
         else:
             fig.add_subplot(111)
             ax = Axes3D(fig)
             ax.scatter(output_df.iloc[:, 0], output_df.iloc[:, 1], output_df.iloc[:, 2], color=output_df['color'],
                        alpha=0.5, marker='x')
-            ax.text(2, 3, 3, 'Iteration: {}, Purity %: {}'.format(count, purity*100))
+            ax.text(0, 0, 5, 'Iteration: {}, Purity %: {}'.format(count, purity*100))
 
         for i in range(self.k):
             if num_cols == 2:
@@ -123,19 +130,24 @@ class Clustering:
                 ax.scatter(centroids.iloc[i, 0], centroids.iloc[i, 1], centroids.iloc[i, 2], color=self.colormap[i + 1],
                            edgecolor='k', linewidths=2)
 
-        for angle in range(0, 360, 4):
-            ax.view_init(30, angle)
-            plt.savefig('frame.png')
-            img = cv2.imread('frame.png')
+        try:
+            ax.view_init(70, 155)  # Fixing frame viewing angle, if frame is 3d
+        except AttributeError:
+            pass
+
+        plt.savefig('frame.png')
+        img = cv2.imread('frame.png')
+        plt.close()
+
+        if self.num_of_vdo_writers == 0:
             shape = img.shape
+            self.num_of_vdo_writers = 1
+            # Lets define the codec and create VideoWriter object
+            fourcc = cv2.VideoWriter_fourcc(*'XVID')
+            self.out_vid = cv2.VideoWriter('o_video.avi', fourcc, 1.0, (shape[1], shape[0]))
 
-            if self.num_of_vdo_writers == 0:
-                self.num_of_vdo_writers = 1
-                # Lets define the codec and create VideoWriter object
-                fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
-                self.out_vid = cv2.VideoWriter('o_video.avi', fourcc, 5.0, (shape[1], shape[0]))
-
-            self.out_vid.write(img)
+        # Writing frame to video
+        self.out_vid.write(img)
 
     def update_centroids(self, centroids, output_df):
         """
@@ -192,4 +204,4 @@ class Clustering:
 
 if __name__ == '__main__':
     # Lets read in the data
-    clustering = Clustering(k=2)
+    clustering = Clustering(k=2, features=[6, 7])
