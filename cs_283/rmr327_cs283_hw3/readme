@@ -1,0 +1,10 @@
+All scripts were meant to be run on python 3
+
+To run part three and four make sure you have the location of the csv file set inside the read_csv functions of the
+respective scripts.
+
+Necessary packages:
+mpl_toolkits
+matplotlib
+pandas
+numpy
