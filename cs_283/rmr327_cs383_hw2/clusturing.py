@@ -7,8 +7,7 @@ import cv2
 
 
 class Clustering:
-    def __init__(self, k, features,
-                 data_path=r'C:\Users\rakee\PycharmProjects\personal\cs_283\rmr327_cs383_hw2\diabetes.csv'):
+    def __init__(self, k, features, data_path=r'diabetes.csv'):
         """
 
         :param k: The number of clusters
@@ -116,7 +115,7 @@ class Clustering:
         fig = plt.figure(figsize=(5, 5))
         num_cols = len(self.x_std.columns.values)
 
-        if num_cols == 2:
+        if num_cols == 2 or num_cols == 1:
             ax = fig.add_subplot(111)
             ax.scatter(output_df.iloc[:, 0], output_df.iloc[:, 1], color=output_df['color'], alpha=0.5, marker='x')
             plt.title('Iteration: {}, Purity %: {}'.format(count, purity * 100))
@@ -131,6 +130,8 @@ class Clustering:
             if num_cols == 2:
                 ax.scatter(centroids.iloc[i, 0], centroids.iloc[i, 1], color=self.colormap[i + 1], edgecolor='k',
                            linewidths=2)
+            elif num_cols == 1:
+                ax.scatter(centroids.iloc[i, 0], 0, color=self.colormap[i + 1], edgecolor='k', linewidths=2)
             else:
                 ax.scatter(centroids.iloc[i, 0], centroids.iloc[i, 1], centroids.iloc[i, 2], color=self.colormap[i + 1],
                            edgecolor='k', linewidths=2)
@@ -150,7 +151,7 @@ class Clustering:
             # Lets define the codec and create VideoWriter object
             fourcc = cv2.VideoWriter_fourcc(*'XVID')
 
-            if len(self.features) == 7 and self.data_path.endswith('diabetes.csv'):
+            if len(self.features) == 8 and self.data_path.endswith('diabetes.csv'):
                 file_name = 'K_{}_F_{}.avi'.format(str(self.k), 'all')
             else:
                 feature_string = ''
@@ -219,7 +220,13 @@ class Clustering:
 if __name__ == '__main__':
     # Lets read in the data
     num_k = input('Please enter a number for k:')
+
+    # Indices for features start at 1.
+    # For diabetes.csv if you wanted to run for all features please enter:1,2,3,4,5,6,7,8
+    # For any csv file just enter the column indices of the features
+    # For example, if you want the second and third features of a data set enter :2,3
     which_features = list(input('Please enter the features you want to include, in a comma separated fashion if you '
                                 'enter more than one(eg. 1,2,3,4):'))[::2]
     which_features = [int(f) for f in which_features]
-    clustering = Clustering(k=2, features=which_features)
+
+    clustering = Clustering(k=int(num_k), features=which_features)
