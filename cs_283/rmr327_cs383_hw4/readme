@@ -1,0 +1,8 @@
+All scripts were meant to be run on python 3
+
+To run the scripts make sure you have the location of the data file set inside the read_csv functions of the
+respective scripts.
+
+Necessary packages:
+pandas
+numpy
