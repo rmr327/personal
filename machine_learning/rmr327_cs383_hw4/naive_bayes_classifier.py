@@ -32,10 +32,10 @@ P_male = n_spam/total_ppl
 P_female = n_not_spam/total_ppl
 
 # Group the data by spam or not spam and calculate the means of each feature
-data_means = data.groupby(57).mean()
+data_means = training_data.groupby(57).mean()
 
 # Group the data by spam or not spam and calculate the variance of each feature
-data_variance = data.groupby(57).var()
+data_variance = training_data.groupby(57).var()
 
 spam_mean = data_means[data_variance.index == 1].values[0]
 spam_variance = data_variance[data_variance.index == 1].values[0]
@@ -61,6 +61,7 @@ testing_feature_data = (testing_data.iloc[:, :-1] - testing_data.iloc[:, :-1].me
 
 prob_spam = testing_feature_data.apply(lambda x: p_x_given_y(x.values, spam_mean[
            int(x.name)], spam_variance[int(x.name)]))
+
 
 prob_not_spam = testing_feature_data.apply(lambda x: p_x_given_y(x.values, not_spam_mean[
            int(x.name)], not_spam_variance[int(x.name)]))
