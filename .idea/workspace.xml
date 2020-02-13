@@ -1,76 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b784b382-16f1-4d60-97ef-79fd160d9330" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/computing_and_controls/alpha_beta_kalman_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computing_and_controls/alpha_kalman_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computing_and_controls/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computing_and_controls/data_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pattern_recog/hog_feature_extraction.py" afterDir="false" />
+    <list default="true" id="d590234d-2eb0-4b82-9e66-e83ad7d9f289" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/3d_printer/agglomerative_clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/personal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/key_encription_sdr/key_gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pattern_recog/image_diff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="33" selection-start-line="8" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="e#32#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/computing_and_controls/alpha_kalman_filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/computing_and_controls/data_set.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/computing_and_controls/alpha_beta_kalman_filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,95 +19,31 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print</find>
-      <find>appli</find>
-      <find>female_height_variance</find>
-      <find>while</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>not_spam_variance</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/logistic_regression.py" />
-        <option value="$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/readme" />
-        <option value="$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/test.py" />
-        <option value="$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/naive_bayes_classifier.py" />
-        <option value="$PROJECT_DIR$/pattern_recog/image_diff.py" />
-        <option value="$PROJECT_DIR$/computing_and_controls/data_gen.py" />
-        <option value="$PROJECT_DIR$/computing_and_controls/alpha_kalman_filter.py" />
-        <option value="$PROJECT_DIR$/pattern_recog/hog_feature_extraction.py" />
-        <option value="$PROJECT_DIR$/computing_and_controls/alpha_beta_kalman_filter.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectId" id="1OTucMFzWgnxR3rl6XRe0rCeEQr" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal" type="462c0819:PsiDirectoryNode" />
-              <item name="computing_and_controls" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1WK6pEFnNEaRRb1lij7noiQDddk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/computing_and_controls" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rakee\PycharmProjects\personal\computing_and_controls" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\rakee\PycharmProjects\personal\computing_and_controls" />
-      <recent name="C:\Users\rakee\PycharmProjects\personal" />
-      <recent name="C:\Users\rakee\PycharmProjects\personal\cs_283\rmr327_cs383_hw4" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="personal" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="personal" />
+      </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.alpha_beta_kalman_filter">
-    <configuration name="alpha_beta_kalman_filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="agglomerative_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="personal" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -175,11 +51,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computing_and_controls" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d_printer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computing_and_controls/alpha_beta_kalman_filter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d_printer/agglomerative_clustering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,377 +64,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="alpha_kalman_filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="personal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computing_and_controls" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computing_and_controls/alpha_kalman_filter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="data_gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="personal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computing_and_controls" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computing_and_controls/data_gen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hog_feature_extraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="personal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pattern_recog" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pattern_recog/hog_feature_extraction.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="image_diff" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="personal" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pattern_recog" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pattern_recog/image_diff.py" />
-      <option name="PARAMETERS" value="--first r'C:\Users\rakee\Desktop\pristine.jpg' --second r'C:\Users\rakee\Desktop\prestine_real.jpg'" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.image_diff" />
-      <item itemvalue="Python.data_gen" />
-      <item itemvalue="Python.alpha_kalman_filter" />
-      <item itemvalue="Python.alpha_beta_kalman_filter" />
-      <item itemvalue="Python.hog_feature_extraction" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.alpha_beta_kalman_filter" />
-        <item itemvalue="Python.hog_feature_extraction" />
-        <item itemvalue="Python.alpha_kalman_filter" />
-        <item itemvalue="Python.data_gen" />
-        <item itemvalue="Python.image_diff" />
+        <item itemvalue="Python.agglomerative_clustering" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b784b382-16f1-4d60-97ef-79fd160d9330" name="Default Changelist" comment="" />
-      <created>1563711587686</created>
+      <changelist id="d590234d-2eb0-4b82-9e66-e83ad7d9f289" name="Default Changelist" comment="" />
+      <created>1578886120136</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563711587686</updated>
+      <updated>1578886120136</updated>
     </task>
-    <task id="LOCAL-00001" summary="cs_383_hw_4">
-      <created>1566770739211</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1566770739211</updated>
-    </task>
-    <task id="LOCAL-00002" summary="name_change_ml_add">
-      <created>1575527141149</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1575527141149</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.14910433" />
-      <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.09378293" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19068256" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.59913325" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.09378293" />
-      <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.09378293" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42036837" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291367" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.567714" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="cs_383_hw_4" />
-    <MESSAGE value="name_change_ml_add" />
-    <option name="LAST_COMMIT_MESSAGE" value="name_change_ml_add" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw1/dimensionality_reduction_via_pca.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/question_2_3d_plot.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/spambase.data" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/x06Simple.csv" />
-    <entry file="file://$USER_HOME$/Anaconda2/envs/numerical_methods/Lib/site-packages/scipy/stats/_continuous_distns.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/numerical_methods/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="599" column="4" selection-start-line="599" selection-start-column="4" selection-end-line="599" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda2/envs/numerical_methods/Lib/site-packages/sklearn/naive_bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1508">
-          <caret line="350" column="32" lean-forward="true" selection-start-line="350" selection-start-column="32" selection-end-line="350" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/s_folds_cross_validation.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/closed_form_linear_regression.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw1/eigenfaces.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/gradient_descent.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw2/clusturing.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw2/readme.txt" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs283_hw3/readme" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/readme" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/test.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/naive_bayes_classifier.py" />
-    <entry file="file://$PROJECT_DIR$/cs_283/rmr327_cs383_hw4/logistic_regression.py" />
-    <entry file="file://$PROJECT_DIR$/predicted_data.csv" />
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/data_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/cook2.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/cook1 (1).csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/data_2.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/averaging_filter_data_for_part_1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/alpha_kf_data_for_part_1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/cad.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/test.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/gray_input.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/scratch.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/crack.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/stringing.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/key_encription_sdr/key_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/image_diff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="33" selection-start-line="8" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="e#32#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/data_set.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern_recog/hog_feature_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/alpha_kalman_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computing_and_controls/alpha_beta_kalman_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="766" y="311" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581568039516">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="766" y="311" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1581568039516" />
+    <state width="1830" height="278" key="GridCell.Tab.0.bottom" timestamp="1581572611741">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581572611741" />
+    <state width="1830" height="278" key="GridCell.Tab.0.center" timestamp="1581572611740">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581572611740" />
+    <state width="1830" height="278" key="GridCell.Tab.0.left" timestamp="1581572611740">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581572611740" />
+    <state width="1830" height="278" key="GridCell.Tab.0.right" timestamp="1581572611741">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581572611741" />
+    <state x="482" y="188" key="SettingsEditor" timestamp="1581568485935">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1581568485935" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579837727885">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579837727885" />
   </component>
 </project>
