@@ -7,32 +7,36 @@ file_template = '/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test00{}.csv'
 data = pd.DataFrame()
 
 for j in range(1, 4):
-    data = pd.concat([data, pd.read_csv(file_template.format(j))])
+    df = pd.read_csv(file_template.format(j))
+    df = (df - df.mean()) / df.std()
+    data = pd.concat([data, df])
+
+data = data[['Absolute Energy (FX) ', 'Peak Frequency (FX)  ', 'Amplitude (FX)       ', 'Signal Strength (FX) ']]
 
 y = pd.read_csv('/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test001 (1).csv')  # Just for time labels
 x = pd.read_csv('/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test001.csv')  # for plotting
 
 cluster = AgglomerativeClustering(n_clusters=6, affinity='cosine', linkage='average')
 
-cluster.fit_predict(x)
+cluster.fit_predict(data)
 
 fig, axs = plt.subplots(2, 2)
 
-labels = cluster.labels_
+labels = cluster.labels_[0:526]
 
 plt_one = axs[0, 0].scatter(y['Time (*)             '], y['Absolute Energy (FX) '], c=labels, cmap='Spectral')
 plt_two = axs[0, 1].scatter(y['Time (*)             '], y['Amplitude (FX)       '], c=labels, cmap='Spectral')
 plt_three = axs[1, 0].scatter(y['Time (*)             '], y['Signal Strength (FX) '], c=labels,
                               cmap='Spectral')
-plt_four = axs[1, 1].scatter(y['Time (*)             '], y['Risetime (FX)        '], c=labels, cmap='Spectral')
+plt_four = axs[1, 1].scatter(y['Time (*)             '], y['Peak Frequency (FX)  '], c=labels, cmap='Spectral')
 
-y_labels = ['Absolute Energy (FX)', 'Amplitude (FX)', 'Signal Strength (FX)', 'Risetime (FX)']
+y_labels = ['Absolute Energy (FX)', 'Amplitude (FX)', 'Signal Strength (FX)', 'Peak Frequency (FX)']
 plots = [plt_one, plt_two, plt_three, plt_four]
 axes = axs.flat
 
 for i in range(len(axes)):
     axes[i].set(xlabel='Time (sec)')
-    axes[i].label_outer()
+    # axes[i].label_outer()
     axes[i].set(ylabel=y_labels[i])
     fig.colorbar(plots[i], ax=axes[i])
 
