@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-file_template = '/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test00{}.csv'  # Replace with path
+file_template = '/home/rmr327/Downloads/Inverted_Parallelogram_Test00{}.csv'  # Replace with path
 data = pd.DataFrame()
 
 for j in range(1, 4):
@@ -11,7 +11,8 @@ for j in range(1, 4):
     df = (df - df.mean()) / df.std()
     data = pd.concat([data, df])
 
-data = data[['Absolute Energy (FX) ', 'Peak Frequency (FX)  ', 'Amplitude (FX)       ', 'Signal Strength (FX) ']]
+data = data[['Relative Time', 'Absolute Energy (FX) ', 'Peak Frequency (FX)  ', 'Signal Strength (FX) ',
+             'Reverberation Frequency (FX) ', 'Counts (FX)          ']]
 
 y = pd.read_csv('/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test001 (1).csv')  # Just for time labels
 x = pd.read_csv('/home/rmr327/Downloads/Inverted_Parallelogram_4mm_Test001.csv')  # for plotting
@@ -24,8 +25,8 @@ fig, axs = plt.subplots(2, 2)
 
 labels = cluster.labels_[0:526]
 
-plt_one = axs[0, 0].scatter(y['Time (*)             '], y['Absolute Energy (FX) '], c=labels, cmap='Spectral')
-plt_two = axs[0, 1].scatter(y['Time (*)             '], y['Amplitude (FX)       '], c=labels, cmap='Spectral')
+plt_one = axs[0, 0].scatter(y['Time (*)             '], y['Counts               '], c=labels, cmap='Spectral')
+plt_two = axs[0, 1].scatter(y['Time (*)             '], y['Reverberation Frequency (FX) '], c=labels, cmap='Spectral')
 plt_three = axs[1, 0].scatter(y['Time (*)             '], y['Signal Strength (FX) '], c=labels,
                               cmap='Spectral')
 plt_four = axs[1, 1].scatter(y['Time (*)             '], y['Peak Frequency (FX)  '], c=labels, cmap='Spectral')
