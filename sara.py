@@ -1,158 +1,95 @@
-import random
+def h_psi(a, b):
+    res = 0.0
+    for i in range(1, b+1):
+        res += (b**i)/(i**a)
 
-HANGMAN_PICS = ['''
-   +---+
-       |
-       |
-       |
-      ===''', '''
-   +---+
-   O   |
-       |
-       |
-      ===''', '''
-   +---+
-   O   |
-   |   |
-       |
-      ===''', '''
-   +---+
-   O   |
-  /|   |
-       |
-      ===''', '''
-   +---+
-   O   |
-  /|\  |
-       |
-      ===''', '''
-   +---+
-   O   |
-  /|\  |
-  /    |
-      ===''', '''
-   +---+
-   O   |
-  /|\  |
-  / \  |
-      ===''']
-
-song = ['Beatles', 'Nirvana', 'Coldplay', 'Linkin Park', 'Backstreet Boys', 'Spice Girls']
-team = ['Philadelphia Eagles', 'New York Giants', 'Washington Redskins', 'Chicago Bears']
-buildings = ['Ross Commons', 'Hagerty Library', 'Urban Eatery']
-
-categories = [song, team, buildings]
-
-play_game = True
-guess_count = 0
-incorrect_guess = []
-guess_list = []
-win = False
+    return '{:.10f}'.format(res)
 
 
-def ask_name():
-    nam = input('Hi there!\nReady to play Hangman? Let''s start with a nickname.\n')
-    print("Hello " + nam + "! Lets play Hangman")
+def kruskal_frac(a, b):
+    res = 0.0
+    for i in range(1, b+1):
+        res += ((a + b)**i)/i
 
-    return nam
+    return '{:.10f}'.format(res)
 
 
-def retrieve_cat():
-    numb = int(input('Pick a category. What looks interesting? (1 [Bands], 2 [Football Teams] or 3 [Drexel University '
-                     'Buildings in University City)?\n'))
-    if numb == 1:
-        word = random.choice(categories[0])
-    elif numb == 2:
-        word = random.choice(categories[1])
+def sqrt_star(n):
+    if n < 2:
+        return 1
     else:
-        word = random.choice(categories[2])
+        if n**0.5 < 2:
+            return 1
 
-    return word
-
-
-def make_guess():
-    guess = input('Please guess a word?\n').lower()
-    while len(guess) > 1:
-        guess = input('Please guess a word?\n').lower()
-
-    if guess in guess_list:
-        print('You already guess this word')
-        make_guess()
-
-    guess_list.append(guess)
-    return guess.lower()
+        return 1 + sqrt_star(n**0.5)
 
 
-def compare_guess(word, guess, ss, rgc, gc):
-    word_2 = word.replace(' ', '')
-    for a in word_2:
-        if a == guess:
-            rgc += 1
-            ss = ''
-            for c in word:
-                if guess == c or c in guess_list:
-                    ss += c.upper() + ''
-                elif c == ' ':
-                    ss += ' '
-                else:
-                    ss += '_ '
-            print('You got one right')
-            return ss, rgc, gc
-
-    print('Incorrect guesses so far\n')
-    incorrect_guess.append(guess)
-    for w in incorrect_guess:
-        print(w)
-
-    gc = gc + 1
-
-    return ss, rgc, gc
+def all_capital(L, start, stop):
+    print(L[start])
+    if L[start].islower():
+        print('ab')
+        return False
+    elif start == stop:
+        print('bb')
+        return True
+    else:
+        all_capital(L, start+1, stop)
 
 
-def replay_game():
-    reply = input('Do you want to replpay the game? (yes or no)\n').upper()
-    while True:
-        if reply == 'YES':
-            return True
-        elif reply == 'NO':
-            return False
+def count_case_switches(letters):
+    count = 0
 
-        reply = input('Please enter yes or no?\n').upper()
+    try:
+        state = letters[0].isupper()
+    except IndexError:
+        state = False  # place holder
+
+    if len(letters) < 2:
+        return 0
+    else:
+        for c in letters:
+            if c.isupper() != state:
+                state = c.isupper()
+                count += 1
+
+    return count
 
 
-while play_game:
-    name = ask_name()
-    word_chosen = retrieve_cat().lower()
-    s = ''
-    for i in word_chosen:
-        if i == ' ':
-            s += ' '
-        else:
-            s += '_ '
-    print('your word is: ' + s)
-    word_len = len(set(word_chosen.replace(' ', '')))
-    right_guess_count = 0
-    print(HANGMAN_PICS[guess_count])
-    while guess_count < 7:
-        s, right_guess_count, guess_count = compare_guess(word_chosen, make_guess(), s, right_guess_count, guess_count)
-        print('Your word is ' + s)
-        if right_guess_count == word_len:
-            win = True
+def qhash():
+    print('To Exit type "quit"')
+    user_input = None
+    while user_input != 'quit':
+        ones_num = 0
+        two_num = 0
+        user_input = input("Enter Text: ")
+        if user_input == 'quit':
             break
 
-        try:
-            print(HANGMAN_PICS[guess_count])
-        except IndexError:
-            print(HANGMAN_PICS[guess_count-1])
+        for a in user_input:
+            n = str(ord(a))
+            ones_num += int(n[-1])
+            two_num += int(n[-2])
 
-        win = False
+        print("Hash is {}".format(ones_num*two_num))
 
-    if not win:
-        print("uh oh")
-    else:
-        print("“you won!”")
 
-    play_game = replay_game()
-    guess_count = 0
-    guess_list = []
-    incorrect_guess = []
+def barcode():
+    user_input = input("Please Enter your ZIP Code:")
+    dict = {1 : '00011', 2: '00101', 3: '00110', 4: ' 01001', 5: '01010', 6 : '01100', 7 : '10001', 8: '10010',
+            9 : '10100', 0: '11000'}
+    res = '1'
+    res_2 = 0
+    for c in user_input:
+        res_2 += int(c)
+        res += dict[int(c)]
+
+    for c in str(res_2):
+        res += dict[int(c)]
+
+    res += '1'
+    print('Your Bar Code is  {}'.format(res))
+
+
+if __name__ == "__main__":
+    t1 = "AAAbbbAcfGGGAA"
+    barcode()
