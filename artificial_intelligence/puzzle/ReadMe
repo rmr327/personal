@@ -1,0 +1,36 @@
+The purpose of this program is to populate an m*n empty grid with words from a list using the flailing wildly strategy
+
+To run the code and get the out put in a .TXT file run the following command in a terminal
+from the source code directory:
+
+python3 puzzle_rmr327.py > result.txt
+
+Each function in the source code is well documented to explain its inputs, outputs and functionality.
+
+Result files 1, 2, 3, 5 all display results of successful (All words were placed in grid) runs of the program.
+
+Result file 4 display an unsuccessful (Rand out of options) run of the program.
+
+Each file prints in the following way:
+    iteration 1:
+        describe current state
+        describe each applicable rule in a list format
+        describe which rule was chose
+    iteration 2:
+        describe current state
+        describe each applicable rule in a list format
+        describe which rule was chose
+    .
+    .
+    .
+    .
+    iteration N:
+    describe current state
+    describe each applicable rule in a list format
+    describe which rule was chose
+
+    print if successful or ran out of choices
+
+    if successful:
+        print final state
+        print final state with all empty cells of the grid filled in with random letters

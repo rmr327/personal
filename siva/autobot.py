@@ -8,7 +8,7 @@ import warnings
 
 
 class AutoBot:
-    def __init__(self, file_path=r'/home/rmr327/Desktop/Z/Columns/',
+    def __init__(self, file_path=r'/home/rmr327/Desktop/Z/CIP/',
                  output_file_name='output.xlsx'):
         self.file_path = file_path
         self.files = [f for f in listdir(file_path) if isfile(join(file_path, f)) and 'CSV' in f]
@@ -34,11 +34,12 @@ class AutoBot:
                 # If number of rows is more than 20 we will split the rows
                 if 'gir' in file_lower:
                     flag = False
-                    vals = np.split(vals, num_vals / 2)
+                    vals = np.split(vals, num_vals / 3)
                     key = re.sub(r".CSV", "", file)
 
                 elif num_vals > 20:
                     if 'col' in file_lower:
+                        print(file_lower)
                         vals = np.split(vals, num_vals / (num_vals/4))
                         key = re.sub(r".CSV", "", file)
 
